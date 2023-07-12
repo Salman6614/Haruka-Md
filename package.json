@@ -2,12 +2,10 @@
   "name": "Haruka-Md",
   "version": "11.0.1",
   "description": "whatsapp tob with multi device.",
-  "main": "haruka.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "index.js",
+  "type": "common.js",
   "scripts": {
-    "start": "node haruka.js"
+    "start": "npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs"
   },
   "keywords": [
     "termux",
